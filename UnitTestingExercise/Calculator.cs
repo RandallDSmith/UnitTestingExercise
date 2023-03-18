@@ -12,8 +12,10 @@ namespace UnitTestingExercise
 
         // Step 2: Create an Add method that accepts 3 integers, adds those integers, and returns an integer
         //For Example:
-        public int Add(int num1, int num2, int num3)
+      
+        public static int AddMethod(int num1, int num2, int num3)
         {
+
             return num1 + num2 + num3;
         }
 
@@ -24,21 +26,31 @@ namespace UnitTestingExercise
         // Step 4: 
         // Create a Subtract method that accepts 2 integers
         // Keep track of which number is getting passed as minuend and subtrahend
-
+        public static int SubMethod(int minuend, int subtrahend)
+        {
+           
+            return minuend - subtrahend;
+        }
 
         // Step 5: Navigate to the UnitTests.cs file and complete the SubtractTest unit test method
 
 
         // Step 6: 
         // Create a Multiply method that passes 2 integers
-
+        public static int MultMethod(int mult1, int mult2)
+        {
+            return mult1 * mult2;
+        }
 
         // Step 7: Navigate to the UnitTests.cs file and complete the MultiplyTest unit test method 
 
 
         // Step 8: 
         // Create a Divide method that passes 2 integers
-
+        public static int DivideMethod(int div1, int div2)
+        {
+            return div1 / div2;
+        }
         // Step 9: Navigate to the UnitTests.cs file and complete the DivideTest unit test method 
 
 
