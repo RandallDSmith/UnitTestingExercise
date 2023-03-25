@@ -5,6 +5,8 @@ namespace UnitTestingExercise.Tests
 {
     public class UnitTests
     {
+
+
         [Theory]
         [InlineData(2, 3, 5, 10)]
         [InlineData(3, 4, 7, 14)]
@@ -16,12 +18,12 @@ namespace UnitTestingExercise.Tests
 
             //Arrange
             // create a Calculator object
-            Calculator unitTests = new Calculator();
+            var unitTests = new Calculator();
 
             //Act
             // call the Add method that is located in the Calculator class
             // and store its result in a variable named actual
-            var actual = Calculator.AddMethod(num1, num2, num3);
+            var actual = unitTests.AddMethod(num1, num2, num3);
 
             //Assert
             Assert.Equal(expected, actual);
@@ -37,9 +39,9 @@ namespace UnitTestingExercise.Tests
             //Start Step 5 here:
 
             //Arrange
-            Calculator unitTests2 = new Calculator();
+            var unitTests2 = new Calculator();
             //Act
-            var actualSub = Calculator.SubMethod(minuend, subtrhend);
+            var actualSub = unitTests2.SubMethod(minuend, subtrhend);
             //Assert
             Assert.Equal(expected, actualSub);
         }
@@ -54,9 +56,9 @@ namespace UnitTestingExercise.Tests
             //Start Step 7 here:
 
             //Arrange
-            Calculator unitTests3 = new Calculator();
+            var unitTests3 = new Calculator();
             //Act
-            var actualMult = Calculator.MultMethod(num1, num2);
+            var actualMult = unitTests3.MultMethod(num1, num2);
             //Assert
             Assert.Equal(expected, actualMult);
         }
@@ -69,12 +71,12 @@ namespace UnitTestingExercise.Tests
         public void DivideTest(int num1, int num2, int expected)
         {
             //Arrange
-            Calculator unitTest4 = new Calculator();
+            var unitTest4 = new Calculator();
             //Act
-            var actualDiv = Calculator.DivideMethod(num1, num2);
+            var actualDiv = unitTest4.DivideMethod(num1, num2);
             //Assert
             Assert.Equal(expected, actualDiv);
-        }
+        }   
 
     }
 }
