@@ -39,9 +39,9 @@ namespace UnitTestingExercise.Tests
             //Start Step 5 here:
 
             //Arrange
-            var unitTests2 = new Calculator();
+            var unitTests = new Calculator();
             //Act
-            var actualSub = unitTests2.SubMethod(minuend, subtrhend);
+            var actualSub = unitTests.SubMethod(minuend, subtrhend);
             //Assert
             Assert.Equal(expected, actualSub);
         }
@@ -56,9 +56,9 @@ namespace UnitTestingExercise.Tests
             //Start Step 7 here:
 
             //Arrange
-            var unitTests3 = new Calculator();
+            var unitTests = new Calculator();
             //Act
-            var actualMult = unitTests3.MultMethod(num1, num2);
+            var actualMult = unitTests.MultMethod(num1, num2);
             //Assert
             Assert.Equal(expected, actualMult);
         }
@@ -71,9 +71,9 @@ namespace UnitTestingExercise.Tests
         public void DivideTest(int num1, int num2, int expected)
         {
             //Arrange
-            var unitTest4 = new Calculator();
+            var unitTests = new Calculator();
             //Act
-            var actualDiv = unitTest4.DivideMethod(num1, num2);
+            var actualDiv = unitTests.DivideMethod(num1, num2);
             //Assert
             Assert.Equal(expected, actualDiv);
         }   

@@ -13,7 +13,7 @@ namespace UnitTestingExercise
         // Step 2: Create an Add method that accepts 3 integers, adds those integers, and returns an integer
         //For Example:
       
-        public static int AddMethod(int num1, int num2, int num3)
+        public int AddMethod(int num1, int num2, int num3)
         {
 
             return num1 + num2 + num3;
@@ -26,7 +26,7 @@ namespace UnitTestingExercise
         // Step 4: 
         // Create a Subtract method that accepts 2 integers
         // Keep track of which number is getting passed as minuend and subtrahend
-        public static int SubMethod(int minuend, int subtrahend)
+        public int SubMethod(int minuend, int subtrahend)
         {
            
             return minuend - subtrahend;
@@ -37,7 +37,7 @@ namespace UnitTestingExercise
 
         // Step 6: 
         // Create a Multiply method that passes 2 integers
-        public static int MultMethod(int mult1, int mult2)
+        public int MultMethod(int mult1, int mult2)
         {
             return mult1 * mult2;
         }
@@ -47,7 +47,7 @@ namespace UnitTestingExercise
 
         // Step 8: 
         // Create a Divide method that passes 2 integers
-        public static int DivideMethod(int div1, int div2)
+        public int DivideMethod(int div1, int div2)
         {
             return div1 / div2;
         }
